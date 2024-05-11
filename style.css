@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Thambi');
+
+body {
+  background-color: whitesmoke;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Baloo Thambi', cursive;
+  font-size: 2rem;
+  height: 10vh;
+  z-index:  index 0;
+  position: relative;
+  background-image: url(./1.jpg);
+}
+
+.text-container > span {
+  text-transform: uppercase;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #f6eded;
+    text-shadow: 0 0 10px #1345a1, 0 0 50px #0652DD, 0 0 100px #0652DD;
+  }
+  
+  10%, 90% {
+    color: #1c0f0f;
+    text-shadow: none;
+  }
+}
+
+.text-container > span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.text-container > span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.text-container > span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.text-container > span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.text-container > span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.text-container > span:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.words {
+    color: #f594e1;
+    font-size: 0;
+    line-height: 1.5;
+  }
+  
+  .words span {
+    font-size: 5rem;
+    display: inline-block;
+    animation: move 3s ease-in-out infinite;
+    text-decoration-color: pink;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-30%, 0);
+    }
+    50% {
+      text-shadow: 0 25px 50px rgba(245, 241, 244, 0.75);
+    }
+    100% {
+      transform: translate(30%, 0);
+    }
+  }
+  
+  .words span:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .words span:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  .words span:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  
+  .words span:nth-child(5) {
+    animation-delay: 2s;
+  }
+  
+  .words span:nth-child(6) {
+    animation-delay: 2.5s;
+  }
+  
+  .words span:nth-child(7) {
+    animation-delay: 3s;
+  }
+  /* the text animation finished*/
+
+  /* calculater animation started*/
+
+  body{
+    padding: 0;
+    margin: 0;
+    
+   
+  }
+  .container{
+    position: absolute;
+    z-index: index -1;
+    height: 550px;
+    width: 400px;
+    background-color:  #ecf0f3;
+    margin-top: 780px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px #5d5d5d;
+  }
+  .container:hover{
+    
+    border-radius: 15px;
+    transform: translate(10px,10px);
+    border-color: #0652DD;
+    border: 3px solid rgb(63, 203, 235);
+  }
+  .calculater{
+    background-color: #ecf0f3;
+    display: grid;
+    grid-template-columns: repeat(4,95px);
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+  }
+  input{
+    grid-column: span 4;
+    height: 70px;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                   inset 5px 5px 12px rgba(0, 0, 0, 0.16) ;
+                   width: 374px;
+    border: none;
+    border-radius: 25px;
+    color: rgba(70,70,70);
+    font-size: 50px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 2px;
+  }
+  button{
+    height: 48px;
+    width: 47px;
+    background-color: #e2ecf3;
+    box-shadow:-5px -5px 12px #ffffff
+                 5px 5px 12px rgba(0, 0, 0, 0.16) ;
+    border: none;
+    margin: 15px;
+    font: size 16px; 
+    border-radius: 15px;
+  }
+  .equal{
+    width: 150px;
+
+  }
+  #head2{
+    margin-left: 110px;}
+
+    @media only screen and (min-width: 376px) {
+      #h11{
+           visibility:hidden
+      }
+    }
+
+
+
+  @media only screen and (max-width: 376px) {
+    body {
+      background-color: lightgreen;
+    }
+    .container{
+      width: 330px;
+      height: 450px;
+     
+    }
+
+.text-container{
+  font-size: 30px;
+}
+.words span{
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.calculater{
+  background-color: #ecf0f3;
+  display: grid;
+  grid-template-columns: repeat(4,80px) !important;
+  padding: 1px 1px;
+  border: none;
+  border-radius: 30px;
+}
+input{
+  grid-column: span 4;
+  height: 60px;
+  box-shadow: inset -5px -5px 12px #ffffff,
+                 inset 5px 5px 12px rgba(0, 0, 0, 0.16) ;
+                 width: 374px;
+  border: none;
+  border-radius: 25px;
+  color: rgba(70,70,70);
+  font-size: 50px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 28px;
+  padding: 2px;
+  width: 290px;
+}
+#h11{
+  margin-top: 350px;
+  margin-left: -188px;
+}
+#heading{
+  margin-left: -80px;
+}
+#head2{
+  margin-left: -38px;
+}
+.equal{
+  width: 120px;
+}
+  }
